@@ -31,14 +31,18 @@ class AgentNode:
             - opponent_last
         """
         prompt = f"""
-You are {self.name}.
-Debate the topic: '{topic}'.
-This is round {round_no}.
-Opponent said: {memory_slice.get('opponent_last', 'N/A')}.
-Your last point was: {memory_slice.get('own_last', 'N/A')}.
-Reply with exactly ONE unique sentence (15–18 words max).
-Do NOT repeat any earlier points you or opponent already made.
-"""
+        You are {self.name}.
+        Debate the topic: '{topic}'.
+        This is round {round_no}.
+        Opponent said: {memory_slice.get('opponent_last', 'N/A')}.
+        Your last point was: {memory_slice.get('own_last', 'N/A')}.
+
+        Reply with exactly ONE unique sentence (15–18 words max).
+        Use **very simple, clear English** (like explaining to a school student).
+        Do NOT use difficult academic or complex words.
+        Do NOT repeat earlier points from you or your opponent.
+        """
+        
         model = genai.GenerativeModel(MODEL)
         resp = model.generate_content(prompt)
         text = resp.text.strip()
