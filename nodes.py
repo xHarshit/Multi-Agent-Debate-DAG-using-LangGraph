@@ -37,12 +37,14 @@ class AgentNode:
         Opponent said: {memory_slice.get('opponent_last', 'N/A')}.
         Your last point was: {memory_slice.get('own_last', 'N/A')}.
 
-        Reply with exactly ONE unique sentence (15–18 words max).
-        Use **very simple, clear English** (like explaining to a school student).
-        Do NOT use difficult academic or complex words.
-        Do NOT repeat earlier points from you or your opponent.
+        Guidelines for your response:
+        - Reply with exactly ONE unique sentence (15–18 words).
+        - Use clear, professional, medium-level English (not too formal, not too casual).
+        - Make strong, logical points that sound reasonable in a real debate.
+        - Stay on-topic and do not go off into unrelated or exaggerated claims.
+        - Do NOT repeat any earlier points from you or your opponent.
         """
-        
+
         model = genai.GenerativeModel(MODEL)
         resp = model.generate_content(prompt)
         text = resp.text.strip()
