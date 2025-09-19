@@ -33,7 +33,7 @@ def generate_diagram():
 
     # Render
     dot.render("dag_diagram", cleanup=True)
-    print("DAG diagram saved as dag_diagram.png (bold text, larger size)")
+    print("DAG diagram saved as dag_diagram.png")
 
 if __name__ == "__main__":
     generate_diagram()
