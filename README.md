@@ -4,6 +4,11 @@ This project is a **debate simulation system** where two AI agents (Scientist an
 
 ---
 
+## 🎥 Demo Video
+[Demo video of the project](https://drive.google.com/file/d/1PM0AInfAy4mxiCn_EhAwbixvsjV-sjj-/view?usp=sharing)
+
+---
+
 ## 🚀 Features
 - **Two AI debaters** (Scientist vs Philosopher) alternate turns.  
 - **Exactly 8 rounds** (4 per agent).  
