@@ -5,7 +5,7 @@ This project is a **debate simulation system** where two AI agents (Scientist an
 ---
 
 ## 🎥 Demo Video
-[Demo video of the project](https://drive.google.com/file/d/1PM0AInfAy4mxiCn_EhAwbixvsjV-sjj-/view?usp=sharing)
+[Demo video of the project](https://drive.google.com/file/d/1Jyh72HdE7q_FjhJefiJACT9UEaCiXfQN/view?usp=sharing)
 
 ---
 
